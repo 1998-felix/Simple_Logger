@@ -36,7 +36,7 @@ jobs:
       - name: Create Release
         uses: svenstaro/upload-release-action@v1-release
         with:
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          repo_token: ${{ secrets.CI_TOKEN }}
           file: .pio/build/*/firmware.bin
           tag: ${{ github.ref }}
           overwrite: true
