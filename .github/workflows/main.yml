@@ -31,7 +31,7 @@ jobs:
           platformio update
       
       - name: Build Simple Logger
-        run: platform run
+        run: platformio run
 
       - name: Create Release
         uses: svenstaro/upload-release-action@v1-release
